@@ -39,3 +39,13 @@ function aVeryBigSum(array) {
     return sum;
 }
 
+// Diagonal Difference
+// https://www.hackerrank.com/challenges/diagonal-difference/problem
+
+function diagonalDifference(array) {
+    let sum = 0;
+    for (let i = 0; i < array[0].length; i++) {
+        sum = sum + (array[i][i] - array[i][array[0].length - i - 1])
+    }
+    return Math.abs(sum)
+}
