@@ -14,7 +14,7 @@ function simpleArraySum(array) {
 }
 
 // Compare the Triplets
-// https://www.hackerrank.com/challenges/compare-the-triplets/problem?h_r=next-challenge&h_v=zen
+// https://www.hackerrank.com/challenges/compare-the-triplets/problem
 
 function compareTriplets(a, b) {
     let score = [0, 0]
@@ -28,6 +28,14 @@ function compareTriplets(a, b) {
     return score;
 }
 
-let first = [1,5,3];
-let second = [4,1,6]; 
-console.log(compareTriplets(first, second))
+// A Very Big Sum
+// https://www.hackerrank.com/challenges/a-very-big-sum/problem
+
+function aVeryBigSum(array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i]
+    }
+    return sum;
+}
+
