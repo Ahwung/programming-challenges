@@ -49,3 +49,24 @@ function diagonalDifference(array) {
     }
     return Math.abs(sum)
 }
+
+// Plus Minus
+// https://www.hackerrank.com/challenges/plus-minus/problem
+
+function plusMinus(array) {
+    let zero = 0;
+    let positive = 0;
+    let negative = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === 0) {
+            zero = zero + 1
+        } else if (array[i] < 0) {
+            negative++
+        } else if (array[i] > 0) {
+            positive = positive + 1
+        }
+    }
+    console.log((positive/array.length).toFixed(6))
+    console.log((negative/array.length).toFixed(6))
+    console.log((zero/array.length).toFixed(6))
+}
