@@ -70,3 +70,14 @@ function plusMinus(array) {
     console.log((negative/array.length).toFixed(6))
     console.log((zero/array.length).toFixed(6))
 }
+
+
+// Staircase
+// https://www.hackerrank.com/challenges/staircase/problem
+
+function staircase(n) {
+    for (let i = 0; i < n; i++) {
+        let stair = ' '.repeat(n - i - 1) + '#'.repeat(i + 1);
+        console.log(stair)
+    }
+}
