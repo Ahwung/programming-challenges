@@ -81,3 +81,23 @@ function staircase(n) {
         console.log(stair)
     }
 }
+
+// Mini-Max Sum
+// https://www.hackerrank.com/challenges/mini-max-sum/problem
+
+function compareNumbers(a,b) {
+    return a - b
+}
+
+function miniMaxSum(array) {
+    array.sort(compareNumbers)
+    let minSum = 0
+    let maxSum = 0
+    for (let i = 0; i < 4; i++) {
+        minSum += array[i]
+    }
+    for (let i = 1; i < 5; i++) {
+        maxSum += array[i]
+    }
+    console.log(minSum, maxSum)
+}
