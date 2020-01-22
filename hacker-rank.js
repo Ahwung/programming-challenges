@@ -101,3 +101,13 @@ function miniMaxSum(array) {
     }
     console.log(minSum, maxSum)
 }
+
+// Birthday Cake Candles
+// https://www.hackerrank.com/challenges/birthday-cake-candles/problem
+
+function birthdayCakeCandles(array) {
+    let maxHeight = Math.max(...array)
+    let result = array.filter(number => number === maxHeight)
+    let count = result.length
+    return count
+}
